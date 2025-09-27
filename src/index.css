@@ -1,0 +1,87 @@
+/* Lato */
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato-Regular.ttf');
+  font-weight: 400; 
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato-Bold.ttf');
+  font-weight: 700;
+}
+
+/* Merriweather */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./assets/fonts/Merriweather_Black.ttf');
+  font-weight: 900;
+}
+
+/* Playfair Display */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./assets/fonts/PlayfairDisplay-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./assets/fonts/PlayfairDisplay-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./assets/fonts/PlayfairDisplay-Bold.ttf');
+  font-weight: 700;
+}
+
+@import 'tailwindcss';
+
+@theme {
+  --font-family1: 'Lato', sans-serif;
+  --font-family2: 'Merriweather', sans-serif;
+  --font-family3: 'Playfair Display', sans-serif;
+
+  --color-text: #3b2f2f;
+  --color-light: #ede6d9;
+  --color-accent: #2e4d3c;
+  --color-secondary: #a15336;  
+}
+
+body {
+  font-family: var(--font-family1);
+  background-color: var(--color-light);
+  color: var(--color-text);
+}
+
+.logo {
+  font-family: var(--font-family2);
+  font-size: 20pt;
+  width: 200px;
+  line-height: 35px;
+  
+  @apply md:leading-[30px]
+}
+
+.hero_title {
+  font-family: var(--font-family3);
+  font-size: 40pt;
+  font-weight: 600;
+  width: 100%;
+
+  @apply md:w-[90%] md:text-[50pt]
+}
+
+.title {
+  font-family: var(--font-family3);
+  font-weight: 600;
+  font-size: 30pt;
+}
