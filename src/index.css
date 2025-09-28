@@ -85,3 +85,13 @@ body {
   font-weight: 600;
   font-size: 30pt;
 }
+
+.cta_text {
+  font-family: var(--font-family3); 
+  font-weight: bold; 
+  color: var(--color-light); 
+  font-size: 30px;
+  width: 420px;
+
+  @apply md:w-[95rem] md:text-[40pt]
+}

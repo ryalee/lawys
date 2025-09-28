@@ -54,7 +54,8 @@ function App() {
         <section className='p-[20px] md:px-[100px]'>
           <h1 className='title'>Nossas Atuações</h1>
 
-          <div className='flex justify-center gap-6 mt-6'>
+          <div className='flex flex-col'>
+            <div className='flex flex-col md:flex-row justify-center gap-6 mt-6'>
             {
               services.slice(0, 3).map((service) => (
                 <div 
@@ -76,7 +77,7 @@ function App() {
             }
           </div>
 
-          <div className='flex justify-center gap-6 mt-6'>
+          <div className='flex flex-col md:flex-row justify-center gap-6 mt-6'>
             {
               services.slice(3).map((service) => (
                 <div 
@@ -97,6 +98,8 @@ function App() {
               ))
             }
           </div>
+          </div>
+          
         </section>
 
         <section className='p-[20px] md:px-[100px]'>
@@ -128,8 +131,8 @@ function App() {
           </div>
         </section>
 
-        <section className='bg-accent px-[20px] py-[30px] flex flex-col md:flex-row md:items-center gap-[20px] md:h-[250px]'>
-          <p style={{ fontFamily: 'var(--font-family3)', fontWeight: 'bold', color: 'var(--color-light', fontSize: 40, width: 890}}>Quer conversar sobre seu caso?<br/>Estamos prontos para ouvir você.</p>
+        <section className='bg-accent px-[20px] py-[30px] flex flex-col md:flex-row md:items-center gap-[20px] md:h-[350px]'>
+          <p className='cta_text'>Quer conversar sobre seu caso?<br/>Estamos prontos para ouvir você.</p>
           <button className='bg-secondary text-light w-[55%] h-[80px] rounded-[10px] text-[15pt] font-semibold md:w-[40%] shadow-[0_0_10px_#a15336] ml-[180px]'>Agende uma consulta</button>
         </section>
       </main>
